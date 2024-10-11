@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Supermercado - Classificação de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sistema de Supermercado</h1>
+        <h2>Classificação de Produtos</h2>
+    </header>
+
+    <nav>
+        <a href="index.html"><i class="fas fa-plus-circle"></i> Cadastro de Produtos</a>
+        <a href="estoque.html"><i class="fas fa-archive"></i> Controle de Estoque</a>
+        <a href="classificacao.html"><i class="fas fa-tags"></i> Classificação de Produtos</a>
+    </nav>
+
+    <section class="form-section">
+        <h3>Classificar Produtos</h3>
+        <form id="classificationForm">
+            <label for="productCategory">Categoria</label>
+            <input type="text" id="productCategory" placeholder="Ex: Alimentos, Bebidas" required>
+
+            <label for="productSubcategory">Subcategoria</label>
+            <input type="text" id="productSubcategory" placeholder="Ex: Grãos, Refrigerantes" required>
+
+            <label for="productBrand">Marca</label>
+            <input type="text" id="productBrand" placeholder="Ex: Marca XYZ" required>
+
+            <button type="submit">Adicionar Classificação</button>
+        </form>
+    </section>
+
+    <section class="classification-list-section">
+        <h3>Lista de Classificações</h3>
+        <table id="classificationTable">
+            <thead>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Subcategoria</th>
+                    <th>Marca</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Classificações de produtos aparecerão aqui -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

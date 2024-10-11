@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Supermercado - Controle de Estoque</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sistema de Supermercado</h1>
+        <h2>Controle de Estoque</h2>
+    </header>
+
+    <nav>
+        <a href="index.html"><i class="fas fa-plus-circle"></i> Cadastro de Produtos</a>
+        <a href="estoque.html"><i class="fas fa-archive"></i> Controle de Estoque</a>
+        <a href="classificacao.html"><i class="fas fa-tags"></i> Classificação de Produtos</a>
+    </nav>
+
+    <section class="form-section">
+        <h3>Atualizar Estoque</h3>
+        <form id="stockForm">
+            <label for="productNameStock">Nome do Produto</label>
+            <select id="productNameStock">
+                <!-- Os produtos cadastrados serão preenchidos aqui via JavaScript -->
+            </select>
+
+            <label for="productQuantity">Quantidade em Estoque</label>
+            <input type="number" id="productQuantity" placeholder="Quantidade disponível" required>
+
+            <label for="minStockLevel">Nível Mínimo de Estoque</label>
+            <input type="number" id="minStockLevel" placeholder="Ex: 10" required>
+
+            <button type="submit">Atualizar Estoque</button>
+        </form>
+    </section>
+
+    <section class="stock-list-section">
+        <h3>Monitoramento de Estoque</h3>
+        <table id="stockTable">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Nível Mínimo</th>
+                    <th>Alerta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Controle de estoque aparecerá aqui -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
